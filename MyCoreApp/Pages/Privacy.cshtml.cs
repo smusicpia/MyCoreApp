@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Globalization;
+
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyCoreApp.Pages
@@ -14,7 +15,8 @@ namespace MyCoreApp.Pages
 
         public void OnGet()
         {
+            string dateTime = DateTime.Now.ToString("dd/MM/yyyy", new CultureInfo("en-US"));
+            ViewData["TimeStamp"] = dateTime;
         }
     }
-
 }

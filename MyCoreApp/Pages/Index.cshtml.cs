@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyCoreApp.Pages
@@ -14,7 +13,6 @@ namespace MyCoreApp.Pages
 
         public void OnGet()
         {
-
         }
     }
 }
